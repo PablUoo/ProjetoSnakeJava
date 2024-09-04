@@ -16,28 +16,24 @@ public class Menu {
     public void mostrarMenu() {
         while (true) {
             System.out.println("1. Cadastrar Jogador");
-            System.out.println("2. Selecionar Jogador");
-            System.out.println("3. Ver Pontuações");
-            System.out.println("4. Iniciar Jogo");
-            System.out.println("5. Sair");
+            System.out.println("2. Ver Pontuações");
+            System.out.println("3. Iniciar Jogo");
+            System.out.println("4. Sair");
 
             int escolha = scanner.nextInt();
-            scanner.nextLine(); // Consumir nova linha
+            scanner.nextLine();
 
             switch (escolha) {
                 case 1:
                     cadastrarJogador();
                     break;
                 case 2:
-                    selecionarJogador();
-                    break;
-                case 3:
                     gerenciadorDePontuacao.mostrarPontuacoes();
                     break;
-                case 4:
+                case 3:
                     iniciarJogo();
                     break;
-                case 5:
+                case 4:
                     return;
                 default:
                     System.out.println("Opção inválida.");

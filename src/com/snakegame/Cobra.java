@@ -72,4 +72,5 @@ public class Cobra {
         int[] cabeca = corpo.getFirst();
         return cabeca[0] == tabuleiro.getComidaX() && cabeca[1] == tabuleiro.getComidaY();
     }
+
 }
